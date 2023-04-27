@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d5f543fe2e.js" crossorigin="anonymous"></script>
+
+    <title>amazon</title>
+</head>
+<style>
+     body{
+        font-family: "Amazon Ember",Arial,sans-serif;
+        background-color: lightgray;
+        }   
+        html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+    .fa-location-dot{
+        color:white;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+   
+    .calls{
+        position: absolute;
+        width:100%;
+      
+        top:75%;
+    }
+    .card{
+        height: 60vh;
+        margin-bottom: 10px;
+    }
+    .last-one{
+        height: 23vh;
+    }
+    .last-two{
+        height: 30vh;
+
+    }
+    .calls-one{
+        margin-top: 90px;
+        background-color:white;
+        margin-left: 20px;
+        margin-right: 20px;
+        position:relative;
+        top:30%;
+
+    }
+    .calls-one .card{
+        box-shadow: 2px 2px 6px 6px #ccc;
+    }
+    .calls-one img{
+width: 80%;
+    }
+    .card-text{
+      color:purple;
+    }
+    .last-card-one img{
+      width:60%;
+    }
+    .last-card-two img{
+      width:100%;
+      height: 80vh;
+    }
+    .second img{
+      width: 10%;
+      height: 20vh;
+
+
+    }
+    .health-container{
+      margin: 20px;
+      position:relative;
+      top:34%;
+    }
+  
+    .fab{
+      color:white;
+    }
+    .fas{
+      color: white;
+    }
+    .first {
+  background-image: url('https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51ovs76vmtL._SX3000_.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width:100%;
+  margin-top: 500px;
+  padding-top: 100px;
+  position: relative;
+  top:23%;
+
+  clear:both;
+  object-fit: cover;
+}
+.second-nav{
+  position:absolute;
+  width:100%;
+  top:14%;
+  background-color: black;
+}
+footer{
+  position: relative;
+  top:40%;
+}
+
+
+</style>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top position-fixed text-white">
+        <div class="container-fluid">
+            <img src="https://zeevector.com/wp-content/uploads/LOGO/Amazon-India-Logo-PNG-White.png" width="10%">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"> 
+                <a class="nav-link active" href="#">Hello<br>
+                  <span class="text-white"><i class="fa-solid fa-location-dot"></i>Select your address</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Returns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Prices</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello, sign in<br>
+                Accounts &Lists</a>
+                <div class="dropdown-menu">
+                    <div class="btn-container d-grid grid-2">
+                  <button class="btn btn-warning ">sign in</button>
+                </div>
+                <br>
+                  <a class="dropdown-item" href="#"><b>Your Account</b></a>
+                  <a class="dropdown-item" href="#">Your Account</a>
+                  <a class="dropdown-item" href="#">Your Orders</a>
+
+
+                  <a class="dropdown-item" href="#">Your Wishlist</a>
+                  <a class="dropdown-item" href="#">Your Recommendations</a>
+                  <a class="dropdown-item" href="#">Your PrimeMembership</a>
+                  <a class="dropdown-item" href="#">Your Primevideo</a>
+
+                 
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-warning my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white second-nav">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active button" href="#" data-filter = "all">All
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white button" href="#" data-filter = "tv">Amazon Mini Tv</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white button" href="#" data-filter = "best">Best Sellers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white button" href="#" data-filter = "mobile">Mobiles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white button" href="#" data-filter = "deals">Today Deals</a>
+              </li>
+              <li class="">
+                <a class="nav-link text-white button "  data-bs-toggle="modal" data-bs-target="#exampleModal" data-filter="service">Customer Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white button" href="#" data-filter = "electronic">Electronics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white button" href="#" data-filter = "prime">Prime</a>
+              </li>
+              <li class="nav-item" style="margin-left: 30px;">
+<img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/IN-hq/2021/img/Mobile_Traffic_/XCM_Manual_1321458_1651511_IN_3781247_400x39_en_IN._CB655944656_.jpg">              </li>
+      </nav>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Request Service</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+      
+          <div class="form-group">
+          <input type="text" placeholder="Full Name" class="form-control name" name="name"><br>
+          <div class="error text-danger">
+              </div>
+          </div><br>
+      
+          <div class="form-group">
+          <input type="mail" placeholder="Email" class="form-control mail" name="mail"><br>
+          <div class="error text-danger">
+              </div>
+          </div><br>
+          <div class="form-group">
+          <input type="text" placeholder="Mobile Number" class="form-control phone" name="phone"><br>
+          <div class="error text-danger">
+              </div>
+              <div class="form-group">
+                <select class="form-control size">
+                  <option value="">Select</option>
+                  <option value="complaint">complaints</option>
+                  <option value="refund">Refund</option>
+                  <option value="refund">product</option>
+                  <option value="refund">Address change</option>
+                  <option value="refund">Enquiries</option>
+
+
+                </select><br>
+          </div>
+          </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="cost">Rise Service</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="container-fluid first" style="padding: 0; margin: 0;">
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-4 g-4 calls">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Upgrade your home |<br> Amazon Brands & more</h5>
+                    </div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img22/PB/PC/Gateway/QC/Mixer-372X232._SY232_CB614658696_.jpg" class="card-img-top" alt="hoem">
+                <div class="card-body">
+                  <p class="card-text">Upto 50% off on home appliances</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+
+                <h5 class="card-title">Up to 70% off | <br>Clearance store</h5>
+                </div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_2x._SY608_CB628315133_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <div class="card-body">
+  
+                  <h5 class="card-title">Up to 50% off | Monitor blood sugar at home</h5>
+                  </div>
+                  <img src="https://images-eu.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img21/Pharmacy/CC_high_3._SY608_CB592656736_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    
+                  </div>
+                </div>
+              </div>
+            <div class="col ">
+              <div class="card last-one">
+                <div class="card-body">
+                  <h5 class="card-title">Sign in for your best <br> experience</h5>
+                  <button class="btn btn-warning mt-3 "><a href="http://127.0.0.1:5500/loginpage.html" class="text-dark">Sign in securely</a></button>
+                </div>
+            </div>
+            <div class="card last-two mt-1">
+                
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg" class="card-img-top" alt="...">
+                
+              </div>
+          </div>
+
+          </div>
+        </div>
+       
+        
+        
+          <div class="row row-cols-1 row-cols-md-5 g-4 calls-one">
+             
+            <div class="col mobile" data-item="mobile">
+                <div class="card">
+                  <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/410iWt8d79L._AC_SY400_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">60% off Deal of the Day</p>
+                    <p class="card-title">RS-29,999.00 &nbsp; MRP &nbsp;<span style="text-decoration: line-through;">74,999.00</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col electronics" data-item="electronics">
+                <div class="card">
+                  <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/31FADBaOJ+L._AC_SY400_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">70% off Deal of the Day</p>
+                    <p class="card-title">RS-999.00 &nbsp; MRP &nbsp;<span style="text-decoration: line-through;">2999.00</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mobile" data-item="mobile">
+                <div class="card">
+                  <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41o3CoW58tL._AC_SY400_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">30% off Deal of the Day</p>
+                    <p class="card-title">RS-39,999.00 &nbsp; MRP &nbsp;<span style="text-decoration: line-through;">89,999.00</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col best" data-item="best">
+                <div class="card last-card-one">
+                  <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/31cQxf0GUeL._AC_SY400_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">72% off Deal of the Day</p>
+                    <p class="card-title">RS-29,999.00 &nbsp; MRP &nbsp;<span style="text-decoration: line-through;">74,999.00</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col tv" data-item="tv">
+                <div class="card last-card-two">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hSJcjGLH1AV4ZPZ7-My7con5S3bGM7a6eg&usqp=CAU">                  <div class="card-body">
+                    <p class="card-text">72% off Limited Time Deal</p>
+                    <p class="card-title">RS-29,999.00 &nbsp; MRP &nbsp;<span style="text-decoration: line-through;">74,999.00</span></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          
+          </div>
+          
+
+
+          <div class="health-container bg-white">
+            <h5 class="pt-3"> <b>Frequently repurchased in Personal Care and Home</b></h5>
+            <div class="row d-flex flex-row col-lg-12 second mt-5">
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41Ke-9YH7lL._AC_SY400_.jpg" class="first-img" >
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71C2mS9F8zL._AC_SY400_.jpg" >
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61pGBqDDz5L._AC_SY400_.jpg" >
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61-uEzXRJyL._AC_SY400_.jpg">
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61MeatPuvnL._AC_SY400_.jpg">
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71RcH-GkD6L._AC_SY400_.jpg">
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51fx29jVFQL._AC_SY400_.jpg">
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81VJEgB+D7L._AC_SY400_.jpg">
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91uhDSpCUPL._AC_SY400_.jpg">
+              <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61nZLrnGveL._AC_SY400_.jpg">
+
+
+
+
+
+            </div>
+          </div>
+          
+       
+
+
+          <script>
+
+       let btn = document.querySelectorAll('.button');
+       let storeditem = document.querySelectorAll('.col');
+       let first = document.querySelector('.first');
+
+
+       btn.forEach(function(buton){
+          buton.addEventListener('click',function(e){
+            let filter = e.target.dataset.filter;
+
+            storeditem.forEach(function(item){
+              if(filter === "all"){
+                first.style.display ="block";
+
+                item.style.display = "block";
+              }else if(item.classList.contains(filter)){
+                first.style.display ="none";
+                item.style.display = "block";
+              
+              }else if(filter == "service"){
+                first.style.display ="block";
+
+                item.style.display = "block";
+
+              }
+              else{
+                item.style.display ="none";
+              }
+
+            });
+
+
+          });
+
+
+       });
+
+
+
+</script>
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-white">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-capitalise fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-white"></i>Get to Know Us
+
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">About us</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Careers</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Press Release</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Amazon Science</a>
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-captialise fw-bold mb-4">
+            Connect With Us
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Facebook</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Twiter</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Instagram</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Linkedin</a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-capitalise fw-bold mb-4">
+Make Money With Us          </h6>
+          <p>
+            <a href="#!" class="text-reset">sell on amazon</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">sell under amazon</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">protect</a>
+          </p>  
+          <p>
+            <a href="#!" class="text-reset">Build your account</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-capitalise fw-bold mb-4">Let Us Help you</h6>
+          <p>
+            <a href="#!" class="text-reset">covid-19 and Amazon</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Account</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Returns centre</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>          
+      </div>
+    </div>  
+  </section>
+
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    ©️ 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Amazon.in</a>
+  </div>
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+
+</body>
+</html>
