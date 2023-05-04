@@ -62,7 +62,7 @@ width: 80%;
   width: 10%;
   height: 20vh;
 
-
+  
 }
 .health-container{
   margin: 20px;
@@ -84,7 +84,7 @@ background-size: cover;
 height: 100vh;
 width:100%;
 margin-top: 500px;
-padding-top: 100px;
+padding-top: 100px; 
 position: relative;
 top:23%;
 

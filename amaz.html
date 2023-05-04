@@ -272,7 +272,8 @@
 
             </div>
           </div>
-          
+
+    
        
 
 
@@ -328,6 +329,7 @@
     </div>
 
     <div>
+      
       <a href="" class="me-4 link-secondary">
         <i class="fab fa-facebook-f"></i>
       </a>
@@ -351,6 +353,7 @@
 
   <section class="">
     <div class="container text-center text-md-start mt-5">
+
       <div class="row mt-3">
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <h6 class="text-capitalise fw-bold mb-4">
@@ -429,6 +432,38 @@ Make Money With Us          </h6>
     ©️ 2021 Copyright:
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Amazon.in</a>
   </div>
+
+
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo" class="text-white"></p>
+  
+  <script>
+  function myFunction() {
+    let person = prompt("Please enter your name ");
+    if (person != null) {
+      document.getElementById("demo").innerHTML = "Hello " + person + "! How are you doing today?";
+    }
+    var personlength = person.length;
+    alert("You have written " + personlength + " characters and left with " + (20-personlength));
+  
+  
+    var first = person.slice(0,1);
+    var firstcharuppercase = first.toUpperCase();
+    var firstname = person.slice(1,4);
+    var firstofname = firstname.toLowerCase();
+    var lastnamefirstletter = person.slice(4,5);
+    var lastnameletter = lastnamefirstletter.toUpperCase();
+    var lastnamerest = person.slice(5,personlength);
+    var lastnamelowcase = lastnamerest.toLowerCase();
+    var capitalisedName = firstcharuppercase + firstofname + lastnameletter + lastnamelowcase
+    alert("Hello " + capitalisedName);
+  }
+  
+  
+  </script>
+           
+
+
 </footer>
 <!-- Footer -->
 
